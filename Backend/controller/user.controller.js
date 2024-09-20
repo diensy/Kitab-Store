@@ -15,7 +15,7 @@ export const Signup = async (req, res) => {
       password: hashPassword,
     });
     await createdUser.save();
-    res.status(201).json({
+    res.status(200).json({
       message: "User Created Successfully",
       user: {
         _id: createdUser._id,

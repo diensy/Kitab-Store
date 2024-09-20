@@ -28,7 +28,7 @@ const App = () => {
           />
           <Route
             path="/about"
-            element={AuthUser ? <About /> : <Navigate to="/signupAbout" />}
+            element={AuthUser ? <About /> : <Navigate to="/signup" />}
           />
         </Routes>
         <Toaster />
